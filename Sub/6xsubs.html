@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator Salad | Addition</title>
+</head>
+<body>
+
+<div>
+    <a href="substraction.html" class="back">Back</a>
+</div>
+
+    <style>
+
+        *{
+            background-color:skyblue;
+        }
+
+        .back{
+        text-decoration: none;
+        position: absolute;
+        top: 5%;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 50px;
+        transition: 0.5s;
+        transition-property: background-color, color;
+        }
+
+        .back:hover{
+            background-color: wheat;
+            color: violet;
+        }
+
+    </style>
+
+
+
+                    <!-- ===============SCRIPT============= -->
+    <script>
+
+        var num1 = prompt("Please enter your first number : ");
+        var num2 = prompt("Please enter your second number : ");
+        var num3 = prompt("Please enter your third number : ");
+        var num4 = prompt("Please enter your forth number : ");
+        var num5 = prompt("Please enter your fifth number : ");
+        var num6 = prompt("Please enter your sixth number : ");
+        num1 = parseFloat(num1, 10);
+        num2 = parseFloat(num2, 10);
+        num3 = parseFloat(num3, 10);
+        num4 = parseFloat(num4, 10);
+        num5 = parseFloat(num5, 10);
+        num6 = parseFloat(num6, 10);
+        var ans = num1 - num2 - num3 - num4 - num5 - num6;
+ 
+        document.write("Ans: " + num1 + " - " + num2 + " - " + num3 + " - " + num4 + " - " + num5 + " - " + num6 + " = " + ans );
+
+    </script>
+</body>
+</html>
